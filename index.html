@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Blansyn | Digital Solutions for Your Needs</title>
+    <meta name="description"
+        content="Blansyn is a creative digital solutions brand in Sri Lanka focused on making clean, fast, and visually appealing online experiences. Web development, photo editing, and more." />
+    <meta name="keywords"
+        content="Blansyn, Digital Solutions, Web Development Sri Lanka, Static Websites, Photo Editing, Instagram Designs" />
+    <meta name="author" content="Blansyn" />
+    <meta property="og:title" content="Blansyn | Digital Solutions" />
+    <meta property="og:description"
+        content="Digital solution for your Needs. We help individuals and businesses build their digital presence." />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gistusercontent.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Three.js CDN -->
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Three.js Background -->
+    <div id="canvas-container"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">bl<span>An</span>SYN</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="fade-in">bl<span>An</span>SYN</h1>
+                <p class="tagline fade-in-delay">"Digital solution for your Needs"</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container glass-card">
+                <h2>"About Us"</h2>
+                <p>
+                    Blansyn is a creative digital solutions brand focused on making clean, fast, and visually appealing
+                    online experiences.
+                    We help individuals, small businesses, and startups build their digital presence through simple yet
+                    professional static websites,
+                    polished photo edits, and eye-catching Instagram designs. Our aim is to deliver quality and
+                    simplicity—helping you look
+                    professional without the complexity or high costs of traditional design services.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <h3>Static Website Developing</h3>
+                    </div>
+                    <div class="service-card glass-card">
+                        <h3>Social Media Posts</h3>
+                    </div>
+                    <div class="service-card glass-card">
+                        <h3>Resume Design</h3>
+                    </div>
+                    <div class="service-card glass-card">
+                        <h3>Basic Designing Works</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2>"projects"</h2>
+                <div class="projects-slider">
+                    <!-- Dummy Projects -->
+                    <div class="project-card glass-card">
+                        <div class="project-img"></div>
+                        <h3>Project Alpha</h3>
+                    </div>
+                    <div class="project-card glass-card main-project">
+                        <div class="project-img"></div>
+                        <h3>Project Beta</h3>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-img"></div>
+                        <h3>Project Gamma</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container glass-card contact-form-container">
+                <h2>contact us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required placeholder="Your Message"></textarea>
+                    </div>
+                    <!-- WhatsApp Action Button -->
+                    <button type="submit" class="whatsapp-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path
+                                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.585 1.961.893 2.796.893 3.183 0 5.768-2.586 5.769-5.766.001-3.181-2.585-5.767-5.769-5.767zm.92 8.894c-.382.192-2.266 1.12-2.582 1.195-.316.075-.686.112-1.01-.004-.323-.115-1.369-.505-2.613-1.612-.966-.859-1.618-1.92-1.808-2.246-.19-.326-.02-.504.145-.668.148-.148.328-.384.492-.576.164-.192.219-.328.328-.544.109-.216.055-.408-.028-.576-.082-.168-.738-1.776-1.01-2.432-.266-.643-.536-.554-.738-.565-.192-.01-.41-.012-.628-.012-.218 0-.574.082-.874.408-.3.327-1.148 1.12-1.148 2.732s1.174 3.172 1.338 3.392c.164.22 2.312 3.528 5.602 4.948 2.19.945 2.638.757 3.102.71.464-.046 1.498-.612 1.71-1.204.212-.592.212-1.1.148-1.204-.064-.104-.236-.168-.498-.296z" />
+                        </svg>
+                        continue in whatsapp to place a order
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dilrukshan. All rights reserved.</p>
+        <p>Developed by <a href="#">Blansyn.Online</a></p>
+    </footer>
+
+    <!-- Theme Switcher (Hidden/Subtle) -->
+    <div id="theme-switcher">
+        <button id="theme-btn" title="Change Theme">⚙️</button>
+        <div class="theme-options" id="theme-options">
+            <button data-theme="navy" class="active">Navy Blue</button>
+            <button data-theme="slate">Dark Slate</button>
+            <button data-theme="purple">Deep Purple</button>
+            <button data-theme="green">Midnight Green</button>
+            <button data-theme="royal">Royal Blue</button>
+        </div>
+    </div>
+</body>
+
+</html>
